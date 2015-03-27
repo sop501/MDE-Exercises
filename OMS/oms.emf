@@ -1,0 +1,20 @@
+@namespace (uri="OMS", prefix="")
+package OMS;
+
+class Company {
+   val Employee[*] employee;
+   val Room[*] room;
+}
+
+class Employee {
+  attr String name;
+  attr String position;
+  attr EDate startDate;
+  attr EDate endDate;
+  ref Room[1]#occupant office;
+}
+
+class Room {
+   attr String name;
+   ref Employee[0..1]#office occupant;   
+}

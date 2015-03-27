@@ -1,0 +1,20 @@
+@namespace(uri="schoolRoom", prefix="")
+package School;
+class School{
+	val SchoolRoom[*] room;
+	val Clock[1] clock;
+}
+
+class SchoolRoom {
+   val Buzzer[1] buzzer;
+}
+
+class Buzzer {
+  // op void ring(Clock trigger);
+   ref Clock[1]#alarm ring;
+   
+}
+class Clock {
+   //op void trigger(float time);
+   ref Buzzer[*]#ring alarm;
+}

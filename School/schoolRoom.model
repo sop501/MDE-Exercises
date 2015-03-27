@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="schoolRoom">
+  <School>
+    <clock time="12.0" alarm="/1/@buzzer /2/@buzzer"/>
+  </School>
+  <SchoolRoom>
+    <buzzer ring="/0/@clock"/>
+  </SchoolRoom>
+  <SchoolRoom>
+    <buzzer ring="/0/@clock"/>
+  </SchoolRoom>
+</xmi:XMI>

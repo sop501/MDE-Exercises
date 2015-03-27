@@ -1,0 +1,26 @@
+@namespace(uri="ModelValidation", prefix="")
+package ModelValidation;
+
+class University {
+   val Student[*] students;
+   val Module[*] modules;
+}
+
+class Student {
+   attr String name;
+   ref Module[1..*]#studentList modules;
+   val Grade[*]#student grades;
+}
+
+class Module {
+   attr String name;
+   attr String lecturer;
+   ref Grade[1..*]#module grade;
+   ref Student[*]#modules studentList;
+}
+
+class Grade {
+   attr int mark;
+   ref Student[1]#grades student;
+   ref Module[1]#grade module;
+}

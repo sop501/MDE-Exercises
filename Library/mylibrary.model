@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="library" xmi:id="_UEKH0M4VEeSuMofemXDM-g">
+  <writers xmi:id="_7apHQNE8EeSIoOQJLRCAUA" name="ade"/>
+  <writers xmi:id="_8vpyYNE8EeSIoOQJLRCAUA" name="lola" books="_f6tfEM4VEeSuMofemXDM-g"/>
+  <books xmi:id="_f6tfEM4VEeSuMofemXDM-g" title="My First Book" author="_8vpyYNE8EeSIoOQJLRCAUA"/>
+</Library>

@@ -1,0 +1,60 @@
+var company : new Company;
+for (i in 1.to(5)){
+	var room:Room = new Room;
+	room.name ="room" +i;
+}
+//hire a new employee
+var employee:Employee = new Employee;
+employee.name = "Jo";
+employee.hire();
+
+//hire and fire a new employee
+var employee1:Employee = new Employee;
+employee1.name = "Joe";
+employee1.hire();
+employee1.fire();
+
+//create a new room and move employee to the room
+var room:Room = new Room;
+room.name ="room 6";
+employee.move(room);
+
+// get free rooms
+company.getFreeRooms().size().println();
+
+
+operation Employee hire() {
+self.name.println();
+	for (room in Room.all){
+		 if(room.occupant.isUndefined()){
+			 self.office= room;
+			 //self.startDate= Date(1993-11-11);
+			// self.endDate= 1993-11-21;
+			 break;
+		 }
+	}
+}
+
+operation Employee fire() {
+	self.office.occupant=null;
+	self.office= null;
+	//self.endDate= Date();
+}
+operation Employee move(to:Room) {
+	if(to.occupant.isDefined()){
+		("room already occupied").println();
+	}
+	else{
+		self.office = to;
+	}	
+}
+
+operation Company getFreeRooms():Sequence(Room) {
+	var seq = Sequence{};
+	for (room in Room.all){
+		 if(room.occupant.isUndefined()){ 
+		 	seq.add(room);
+		 }
+	}
+	return seq;
+}

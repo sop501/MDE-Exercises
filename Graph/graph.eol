@@ -1,0 +1,14 @@
+var graph: new Graph;
+for (i in 1.to(2)){
+	var edge:Edges = new Edges;
+	edge.name = "edge" + i;
+	var vertice:Vertices= new Vertices;
+	vertice.name = "vertice "+i;
+	edge.vertice =vertice;
+	var vertice2:Vertices= new Vertices;
+	vertice2.name = "vertice "+(i+1);
+	edge.vertice=vertice2;	
+}
+
+
+

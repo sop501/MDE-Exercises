@@ -1,0 +1,15 @@
+//var position:Position;
+for (i in 1.to(2)){
+	var team : new Team;
+	for (j in 1.to(2)){
+		var manager:Manager= new Manager;
+		manager.name ="manager "+j+"team"+i;
+		manager.coach = team;
+		for (k in 1.to(11)){
+		var player:Player= new Player;
+		player.name ="player "+k+"team"+i;
+		//player.position = position.random();
+		player.squadMember = team;
+		}
+	}
+}

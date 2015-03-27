@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="PParty" nsURI="pparty" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="Pparty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="voter" upperBound="-1"
+        eType="#//Voters" containment="true" eOpposite="#//Voters/electorate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supporter" upperBound="-1"
+        eType="#//Supporters" containment="true" eOpposite="#//Supporters/member"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Voters">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="electorate" lowerBound="1"
+        eType="#//Pparty" eOpposite="#//Pparty/voter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Supporters">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" lowerBound="1"
+        eType="#//Pparty" eOpposite="#//Pparty/supporter"/>
+  </eClassifiers>
+</ecore:EPackage>

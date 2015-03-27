@@ -1,0 +1,18 @@
+@namespace(uri="graph", prefix="")
+package Graph;
+
+class Graph {
+  val Vertices[*] vertice;
+  val Edges[*] edge;
+}
+
+class Vertices{
+  attr String name;
+  ref Edges[*]#vertice edge;
+}
+
+class Edges {
+  attr String name;
+  ref Vertices[2]#edge vertice;
+}
+

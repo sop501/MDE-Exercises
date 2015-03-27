@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="pparty">
+  <Pparty name="1">
+    <voter name="voter 1Party1"/>
+    <voter name="voter 2Party1"/>
+    <supporter name="supporter 1Party1"/>
+    <supporter name="supporter 2Party1"/>
+  </Pparty>
+  <Pparty name="2">
+    <voter name="voter 1Party2"/>
+    <voter name="voter 2Party2"/>
+    <supporter name="supporter 1Party2"/>
+    <supporter name="supporter 2Party2"/>
+  </Pparty>
+</xmi:XMI>

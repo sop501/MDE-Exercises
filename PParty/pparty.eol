@@ -1,0 +1,17 @@
+for (i in 1.to(2)){
+	var party : new Pparty;
+	party.name=""+i;
+	for (j in 1.to(2)){
+		var voter:Voters= new Voters;
+		voter.name = "voter "+ j+"Party"+i;
+		voter.electorate = party;
+	}
+	for (j in 1.to(2))
+	{
+		var supporter:Supporters= new Supporters;
+		supporter.name = "supporter "+ j+"Party"+i;
+		//party.supporter = supporter;
+		supporter.member = party;
+	}
+	
+}

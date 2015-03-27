@@ -1,0 +1,11 @@
+rule University2Record
+transform u: university!Student
+to r: record!Transcript{
+r.student = u.name;
+if (u.grades.isDefined())
+{
+	var grade = new Record!TranscriptItem;
+	grade.module = u.grades.module;
+	grade.mark= u.grades.mark;
+}
+}

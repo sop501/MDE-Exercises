@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="graph" xmi:id="_J5Va4NE8EeSIoOQJLRCAUA">
+  <vertice xmi:id="_Wde38NE8EeSIoOQJLRCAUA" name="vertice1" edges="_UZdxwNE8EeSIoOQJLRCAUA"/>
+  <vertice xmi:id="_ZeACoNE8EeSIoOQJLRCAUA" name="Vertice2" edges="_UZdxwNE8EeSIoOQJLRCAUA"/>
+  <vertice xmi:id="_ljNg8NE8EeSIoOQJLRCAUA" name="vertice3" edges="_UZdxwNE8EeSIoOQJLRCAUA"/>
+  <edge xmi:id="_UZdxwNE8EeSIoOQJLRCAUA" name="edge1" vertices="_Wde38NE8EeSIoOQJLRCAUA _ZeACoNE8EeSIoOQJLRCAUA _ljNg8NE8EeSIoOQJLRCAUA"/>
+</Graph>

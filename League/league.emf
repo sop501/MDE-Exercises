@@ -1,0 +1,28 @@
+@namespace(uri="league", prefix="")
+package league;
+
+class League {
+   val Team[*] club;
+}
+
+class Team {
+	val Manager[1]#coach manager;
+	val Player [*]#squadMember player;
+}
+class Member {
+	attr String name;
+}
+class Manager extends Member{
+   ref Team[1]#manager coach;
+   
+}
+class Player extends Member{
+    attr Position position;
+    ref Team[1]#player squadMember;
+}
+
+enum Position {
+   forward;
+   defender;
+   goalkeeper;
+}

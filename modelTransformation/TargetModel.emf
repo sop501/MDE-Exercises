@@ -1,0 +1,16 @@
+@namespace(uri="ModelTransformation", prefix="")
+package ModelTransformation;
+
+class Record {
+   val Transcript[*] transcripts;
+}
+
+class Transcript {
+   attr String student;
+   val TranscriptItem[*] items;
+}
+
+class TranscriptItem {
+   attr String module;
+   attr int mark;
+}

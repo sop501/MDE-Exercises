@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="league">
+  <Team>
+    <manager name="manager 2team1"/>
+    <player name="player 1team1"/>
+    <player name="player 2team1"/>
+    <player name="player 3team1"/>
+    <player name="player 4team1"/>
+    <player name="player 5team1"/>
+    <player name="player 6team1"/>
+    <player name="player 7team1"/>
+    <player name="player 8team1"/>
+    <player name="player 9team1"/>
+    <player name="player 10team1"/>
+    <player name="player 11team1"/>
+    <player name="player 1team1"/>
+    <player name="player 2team1"/>
+    <player name="player 3team1"/>
+    <player name="player 4team1"/>
+    <player name="player 5team1"/>
+    <player name="player 6team1"/>
+    <player name="player 7team1"/>
+    <player name="player 8team1"/>
+    <player name="player 9team1"/>
+    <player name="player 10team1"/>
+    <player name="player 11team1"/>
+  </Team>
+  <Team>
+    <manager name="manager 2team2"/>
+    <player name="player 1team2"/>
+    <player name="player 2team2"/>
+    <player name="player 3team2"/>
+    <player name="player 4team2"/>
+    <player name="player 5team2"/>
+    <player name="player 6team2"/>
+    <player name="player 7team2"/>
+    <player name="player 8team2"/>
+    <player name="player 9team2"/>
+    <player name="player 10team2"/>
+    <player name="player 11team2"/>
+    <player name="player 1team2"/>
+    <player name="player 2team2"/>
+    <player name="player 3team2"/>
+    <player name="player 4team2"/>
+    <player name="player 5team2"/>
+    <player name="player 6team2"/>
+    <player name="player 7team2"/>
+    <player name="player 8team2"/>
+    <player name="player 9team2"/>
+    <player name="player 10team2"/>
+    <player name="player 11team2"/>
+  </Team>
+</xmi:XMI>

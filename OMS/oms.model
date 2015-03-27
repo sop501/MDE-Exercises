@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="OMS">
+  <Company/>
+  <Room name="room1"/>
+  <Room name="room2"/>
+  <Room name="room3"/>
+  <Room name="room4"/>
+  <Room name="room5"/>
+  <Employee name="Jo" office="/8"/>
+  <Employee name="Joe"/>
+  <Room name="room 6" occupant="/6"/>
+</xmi:XMI>

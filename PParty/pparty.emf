@@ -1,0 +1,17 @@
+@namespace(uri="pparty", prefix="")
+package PParty;
+
+class Pparty {
+	attr String name;
+	val Voters[*]#electorate voter;
+	val Supporters[*]#member supporter;
+}
+
+class Voters {
+   attr String name;
+   ref Pparty[1]#voter electorate;  
+}
+class Supporters {
+   attr String name;
+   ref Pparty[1]#supporter member;
+}

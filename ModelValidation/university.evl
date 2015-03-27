@@ -1,0 +1,31 @@
+context university!Student{
+	constraint minModule{
+	check: self.modules.size() >=6
+	message : "Student " + self.student + " must take up to 6 modules"
+	}
+}
+context university!Grade{
+	constraint gradeMark{
+	check: self.mark()>=0
+	message : "All grades must be non-negative"
+	}
+}
+context university!Module{
+	constraint moduleStudent{
+	check: self.studentList.name.isUnique()
+	message : "Student names must be unique for each module"
+	}
+}
+context university!Student{
+	constraint checkGrade{
+	check{
+	var moduleGrade: Grade;
+	var studentGrade: Grade;
+	grade = self.modules.grade;
+	studentGrade = self.grades;
+	return grade==student.module.grade;
+	} 
+	message : "Student grades must be Identical to Module grade"
+	}
+}
+

@@ -1,0 +1,15 @@
+@namespace(uri="student", prefix="")
+package Student;
+
+class Student {
+   attr String name;
+   ref Prize[*]#student award;
+  // op void write(Sponsor sponsor);
+}
+class Prize{
+	ref Sponsor[1..2]#prize sponsor;
+	ref Student[1]#award student;
+}
+class Sponsor{
+	ref Prize[*]#sponsor prize;
+}
